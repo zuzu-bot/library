@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('your-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+/* Dark overlay */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Login Box */
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    width: 320px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Text */
+.register {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.register a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Form */
+.login-box label {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Options row */
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #2c7be5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1a5edb;
+}
+
+
+</style>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="login-box">
+    <p class="register">Not Registered? <a href="rasgiter.html">Click Here to Register</a></p>
+
+    <form>
+        <label>Username / Email *</label>
+        <input type="text" placeholder="Username / Email">
+
+        <label>Password *</label>
+        <input type="password" placeholder="Password">
+
+        <div class="options">
+            <label><input type="checkbox"> Remember Me</label>
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit">Sign In</button>
+    </form>
+</div>
+
+</body>
+</html>

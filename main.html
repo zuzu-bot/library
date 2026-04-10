@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>National Library of India</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 18px;
+}
+
+.top-bar .right span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.register-btn {
+    background: #1e90ff;
+    color: white;
+    border: none;
+   padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.register-btn a{
+    text-decoration: none;
+    color: #dad9d9;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c2c2c;
+    color: white;
+    padding: 10px 130px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.logo h3 {
+    font-size: 25px;
+}
+
+.logo p {
+    font-size: 12px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+nav ul li:hover {
+    color: #1e90ff;
+}
+
+/* Hero Section */
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+  padding: 70px;
+  background: #dad9d9;
+  text-align: center;
+  justify-content: center;
+}
+
+.profile {
+    width: 30%;
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.profile h4 {
+    margin-top: 10px;
+}
+
+.text {
+    width: 70%;
+    padding-left: 40px;
+}
+
+.text h2 {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 20px;
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Logos */
+.top-logos {
+    background: #f4a300;
+    padding: 20px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.logos img {
+    height: 50px;
+}
+
+/* Footer */
+.footer {
+    background: #2c2c2c;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+/* Left Section */
+.footer-left ul {
+    list-style: none;
+}
+
+.footer-left ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-left ul li:hover {
+    color: #00bfff;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social span {
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Middle Section */
+.footer-middle {
+    border-left: 1px solid #555;
+    padding-left: 40px;
+}
+
+.footer-middle ul {
+    list-style: none;
+   
+}
+
+.footer-middle ul li {
+    margin-bottom: 10px;
+}
+
+.badge {
+    margin-top: 20px;
+    width: 100px;
+}
+
+.footer-middle ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Right Section */
+.footer-right {
+    width: 30%;
+}
+
+.footer-right h2 {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row input {
+    width: 50%;
+}
+
+.footer-right input,
+.footer-right textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.footer-right textarea {
+    height: 80px;
+}
+
+.captcha-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.captcha {
+    height: 40px;
+}
+
+button {
+    background: #4db8ff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0099cc;
+}
+
+/* Bottom */
+.copyright {
+    background: #f05a3c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.facilities {
+      padding: 85px 25%;
+    background: #e9e6e6;
+    font-family: Arial, sans-serif;
+}
+
+.facilities h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #222;
+    display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.facility-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.facility-text {
+    flex: 1;
+}
+
+.facility-text p {
+    font-size: 22px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.facility-image {
+    flex: 1;
+}
+
+.facility-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+</style>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="left">English | हिंदी | বাংলা</div>
+       <button class="register-btn"><a href="rasgiter.html">REGISTER</a></button></a>
+    </div>
+</div>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">
+        <img src="SATI_Vidisha.jpg" alt="logo">
+        <div>
+            <h3>SATI Library </h3>
+            <!-- <p>Ministry of Culture<br>Government of India</p> -->
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>RESOURCES</li>
+            <li>REMOTE ACCESS</li>
+            
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <img src="Grand library with wooden bookshelves.png" alt="library">
+</section>
+
+<!-- Content Section -->
+<section class="content">
+    <div class="text">
+        <h2>About us</h2>
+        <p>
+           The Samrat Ashok Technological Institute (SATI) Library is a central academic facility that supports the learning and research needs of students and faculty. It houses a vast collection of textbooks, reference materials, journals, and competitive exam books across various engineering and science disciplines. In addition to its physical resources, the library provides access to digital content such as e-books and online journals, enabling users to explore knowledge beyond traditional boundaries. The library also features a शांत and well-equipped reading hall that offers a comfortable environment for focused study. With facilities like computer access, internet connectivity, and an organized catalog system, users can easily search and utilize resources. Overall, the SATI Library plays a vital role in promoting academic excellence, encouraging research, and creating a productive learning atmosphere within the institute.
+        </p>
+        <p>
+            The origin of the National Library of India is traced to the former
+            Calcutta Public Library.
+        </p>
+    </div>
+</section>
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+
+    <div class="facility-container">
+        <div class="facility-text">
+            <p>
+                The Samrat Ashok Technological Institute (SATI) Library provides a well-maintained and peaceful reading environment where students can focus on their studies without distractions. It houses a wide collection of textbooks, reference books, and journals across various disciplines.
+            </p>
+
+            <p>
+                In addition to physical resources, the library offers modern digital facilities such as computer systems with internet access, enabling students to explore e-books and online journals. The organized system ensures easy access to resources along with smooth book issue and return.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Top Logos Section -->
+<section class="top-logos">
+    <div class="logos">
+        <img src="Screenshot 2026-04-10 021117.png">
+        <img src="Screenshot 2026-04-10 021124.png">
+        <img src="Screenshot 2026-04-10 021129.png">
+        <img src="Screenshot 2026-04-10 021138.png">
+        <img src="download.png">
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+
+    <!-- Left Links -->
+    <div class="footer-left">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Library Catalogue</li>
+            <li>Digitized Books</li>
+            <li>RTI</li>
+            <li>Recruitment Rules & Vacancy Position</li>
+            <li>Order/Circular</li>
+            <li>Annual Report</li>
+        </ul>
+    </div>
+
+    <!-- Middle Links -->
+    <div class="footer-middle">
+        <ul>
+            <li>Tenders</li>
+            <li>For Publishers</li>
+            <li>National Library Blog</li>
+            <li>Contact Us</li>
+            <li class="none"><a href="Admin.html">Admin Login</a></li>
+        </ul>
+
+        <img src="SATI_Vidisha.jpg" class="badge">
+    </div>
+
+    <!-- Feedback Form -->
+    <div class="footer-right">
+        <h2>FEEDBACK TO US</h2>
+
+        <div class="form-row">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="yourname@company.com">
+        </div>
+
+        <textarea placeholder="Message"></textarea>
+
+        <div class="captcha-row">
+            <img src="" class="captcha">
+            <input type="text" placeholder="Image Code">
+        </div>
+
+        <button>Submit</button>
+    </div>
+
+</footer>
+
+<!-- Bottom Copyright -->
+<div class="copyright">
+    <p>
+        COPYRIGHT & DISCLAIMER: No part of this site can be copied or reproduced...
+    </p>
+    
+</div>
+
+</body>
+</html>
